@@ -51,11 +51,6 @@ Sub Stocks()
                 Range("L" & tableRow).Value = Percent_Change
                 Range("L" & tableRow).NumberFormat = "0.00%"
                 
-                If Range("K" & tableRow).Value > 0 Then
-                    Range("K" & tableRow).Interior.ColorIndex = 4
-                Else
-                    Range("K" & tableRow).Interior.ColorIndex = 3
-                End If
             
                 tableRow = tableRow + 1
             
